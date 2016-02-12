@@ -20,7 +20,7 @@ public class WordPuzzle {
       HashMap model = new HashMap();
       String userString = request.queryParams("inputString");
       String createdPuzzle = WordPuzzle.vowelRemover(userString);
-
+      
       model.put("createdPuzzle", createdPuzzle);
       model.put("template", "templates/results.vtl");
       return new ModelAndView(model, layout);
