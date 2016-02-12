@@ -19,13 +19,13 @@ public class WordPuzzleIntegrationTest extends FluentTest {
     public void rootTest() {
       goTo("http://localhost:4567/");
       assertThat(pageSource()).contains("Word Puzzle");
+    }
 
   @Test
-    public void vowelRemover() {
+    public void vowelRemoverTest() {
       goTo("http://localhost:4567/");
       fill("#inputString").with("I think I have created a puzzle?!");
       submit("#submitBtn");
       assertThat(pageSource()).contains("- th-nk - h-v- cr--t-d - p-zzl-?!");
     }
-  }
 }
