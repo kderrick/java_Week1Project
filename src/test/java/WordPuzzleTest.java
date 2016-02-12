@@ -13,13 +13,25 @@ public class WordPuzzleTest {
   @Test
   public void vowelRemover_RemoveAllEsFromString_lowercase() {
     WordPuzzle testWordPuzzle = new WordPuzzle();
-    String letterARemoved = "h--l";
-    assertEquals(letterARemoved, testWordPuzzle.vowelRemover("heel"));
+    String letterERemoved = "h--l";
+    assertEquals(letterERemoved, testWordPuzzle.vowelRemover("heel"));
   }
   @Test
   public void vowelRemover_RemoveAllIsFromString_lowercase() {
     WordPuzzle testWordPuzzle = new WordPuzzle();
-    String letterARemoved = "h-ll";
-    assertEquals(letterARemoved, testWordPuzzle.vowelRemover("hill"));
+    String letterIRemoved = "h-ll";
+    assertEquals(letterIRemoved, testWordPuzzle.vowelRemover("hill"));
+  }
+  @Test
+  public void vowelRemover_RemoveAllOsFromString_lowercase() {
+    WordPuzzle testWordPuzzle = new WordPuzzle();
+    String letterORemoved = "h-t";
+    assertEquals(letterORemoved, testWordPuzzle.vowelRemover("hot"));
+  }
+  @Test
+  public void vowelRemover_RemoveAllUsFromString_lowercase() {
+    WordPuzzle testWordPuzzle = new WordPuzzle();
+    String letterURemoved = "h-t";
+    assertEquals(letterURemoved, testWordPuzzle.vowelRemover("hut"));
   }
 }
