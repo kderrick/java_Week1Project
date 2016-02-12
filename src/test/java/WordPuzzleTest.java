@@ -16,4 +16,10 @@ public class WordPuzzleTest {
     String letterARemoved = "h--l";
     assertEquals(letterARemoved, testWordPuzzle.vowelRemover("heel"));
   }
+  @Test
+  public void vowelRemover_RemoveAllIsFromString_lowercase() {
+    WordPuzzle testWordPuzzle = new WordPuzzle();
+    String letterARemoved = "h-ll";
+    assertEquals(letterARemoved, testWordPuzzle.vowelRemover("hill"));
+  }
 }
