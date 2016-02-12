@@ -38,6 +38,6 @@ public class WordPuzzle {
   }
 
 public static String vowelRemover(String inputString) {
-  return inputString.replaceAll("[aeiou]", "-");
+  return inputString.replaceAll("[aeiouAEIOU]", "-");
   }
 }

@@ -34,4 +34,10 @@ public class WordPuzzleTest {
     String letterURemoved = "h-t";
     assertEquals(letterURemoved, testWordPuzzle.vowelRemover("hut"));
   }
+  @Test
+  public void vowelRemover_RemoveAllVowelsIncludingUpperCase() {
+    WordPuzzle testWordPuzzle = new WordPuzzle();
+    String upperAndLowerCaseVowelsRemoved = "Wh-t -s Y--r N-m-?";
+    assertEquals(upperAndLowerCaseVowelsRemoved, testWordPuzzle.vowelRemover("WhAt is YoUr NamE?"));
+  }
 }
