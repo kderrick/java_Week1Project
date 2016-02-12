@@ -37,7 +37,7 @@ public class WordPuzzle {
     // }, new VelocityTemplateEngine());
   }
 
-public static String vowelRemover(String inputString) {
-  return inputString.replaceAll("[aeiouAEIOU]", "-");
-  }
+  public static String vowelRemover(String inputString) {
+    return inputString.replaceAll("[aeiouAEIOU]", "-");
+    }
 }
