@@ -1,9 +1,9 @@
 body {
-  background-image: url("img/wood.png");
+  background-image: url("img/logo.png");
 }
 
-#submitButton {
-  background-image:url("img/block.png");
+#submitBtn {
+  background-image:url("img/small_steps.png");
   height: 110px;
   width: 110px;
   border: solid 1px;
